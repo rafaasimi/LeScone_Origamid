@@ -1,12 +1,99 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Le Scone</title>
 	<meta name="description" content="Le Scone - Restaurante">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="./css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa&family=PT+Mono&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/png" href="./img/lescone-icone.png" />
 </head>
+
 <body>
-	<p>Teste</p>
+
+	<main class="container intro">
+		<div class="grid-5">
+			<img class="logo" src="./img/lescone.png" alt="Le Scone">
+			<div class="intro-info">
+				<p>De Seg. à Sáb. <span class="aberto"></span><br>
+					das 07:00h às 18:00h</p>
+				<p>Jd. Abolição, 999<br>
+					Araras, SP</p>
+			</div>
+			<p class="intro-telefone">+55 019 99999-9999</p>
+		</div>
+		<div class="grid-7">
+			<img src="./img/foto.jpg" alt="Le Scone - Atendente fazendo café">
+		</div>
+	</main>
+
+	<section class="container">
+		<h1 class="grid-4 titulo">Menu</h1>
+		<div class="grid-7 offset-1">
+			<div class="menu-item">
+				<img src="./img/prato-1.png" alt="Foto Prato 1">
+				<h2>Entradas</h2>
+				<ul>
+					<li><span>R$1,70</span>Ovos Mexidos</li>
+					<li><span>R$1,50</span>Scones de Frutas</li>
+					<li><span>R$2,00</span>Joelho de Queijo</li>
+					<li><span>R$2,50</span>Coxinha de Frango</li>
+					<li><span>R$1,50</span>Presunto Cozido</li>
+				</ul>
+			</div>
+
+			<div class="menu-item">
+				<img src="./img/prato-2.png" alt="Foto Prato 2">
+				<h2>Pratos Principais</h2>
+				<ul>
+					<li><span>R$10,70</span>Risoto de Camarãos</li>
+					<li><span>R$12,50</span>Penne com Queijo</li>
+					<li><span>R$20,00</span>Feijoada</li>
+					<li><span>R$11,50</span>Costela ao Molho</li>
+					<li><span>R$14,50</span>Medalhão de Frango</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section class="container">
+		<h1 class="grid-4 titulo">Contato</h1>
+		<div class="grid-7 offset-1">
+			<form>
+				<label for="nome">Nome</label>
+				<input type="text">
+				<div class="row">
+					<div class="grid-7">
+						<label for="email">E-mail</label>
+						<input type="email">
+					</div>
+					<div class="grid-5">
+						<label for="tel">Telefone</label>
+						<input type="tel" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}">
+					</div>
+				</div>
+				<label for="mensagem">Mensagem</label>
+				<textarea></textarea>
+				<input type="button" class="button" value="Enviar">
+			</form>
+			<div class="contato-info">
+				<p>contato@lescone.com ////</p>
+				<p>+55 019 99999-9999 ////</p>
+			</div>
+			<a href="#" class="contato-mapa">
+				<img src="./img/map.png" alt="Como chegar em Le Scone.">
+			</a>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<p>Le Scone © 1989 - 2016. Alguns direitos reservados</p>
+			<a href="#" target="_blank"><img src="./img/lescone-icone.png" alt="Le Scone"></a>
+		</div>
+	</footer>
+
 </body>
+
 </html>
