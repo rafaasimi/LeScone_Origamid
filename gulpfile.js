@@ -13,8 +13,8 @@ gulp.task("sass", compilaSass);
 function compilaSass() {
   return gulp
     .src("css/scss/**/*.scss")
-    // .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError)) // Converte Sass para CSS mimificado com gulp-sass
-    .pipe(sass())
+    .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError)) // Converte Sass para CSS mimificado com gulp-sass
+    // .pipe(sass())
     .pipe(gulp.dest("css"));
 }
 
